@@ -9,7 +9,7 @@
 }
 
 .body {
-    background-image: url('./bg_color.png');
+    background-image: url('./assets/img/bg_color.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,9 +39,9 @@
 }
 
 .header-image {
-    position: absolute;
+    /* position: absolute;
     left: 50;
-    top: 50;
+    top: 50; */
     width: 80vw;
 }
 
@@ -54,12 +54,27 @@
     right: 0;
 }
 
+.btn-cta {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+.btn-cta:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #2c2c2c!important;
+    color: #fff!important;
+}
+
 @media screen and (max-width: 768px) {
     .device {
         font-size: 90px;
     }
     .desktop {
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -71,6 +86,6 @@
         font-size: 200px;
     }
     .mobile {
-        visibility: hidden;
+        display: none;
     }
 }
